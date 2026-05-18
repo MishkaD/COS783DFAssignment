@@ -1,0 +1,52 @@
+1. Real forensic diversity
+Includes:
+-authentication attacks
+-malware
+-phishing
+-data exfiltration
+-privilege escalation
+-network intrusion
+-insider threats
+
+2. Real-world SOC alignment
+This mirrors:
+-SIEM logs (Splunk / ELK style)
+-SOC monitoring systems
+-incident response data
+
+
+3. Better AI performance
+ SentenceTransformer model  has:
+ -richer vocabulary
+ -more variation in semantics
+ -similarity detection results
+
+ 4. Supports stronger evaluation
+  demonstrate different query types:
+ -“login attack”
+ -“data leak”
+ -“malware activity”
+ -“phishing email”
+ xample demo queries you can show
+
+DEMOING:
+
+1.Authentication
+“password attack”
+“login failure”
+“brute force”
+
+2. Data breach
+“data leak”
+“database exposed”
+“file exfiltration”
+
+3. Malware
+“ransomware”
+“malicious file”
+“system infection”
+
+3. Phishing
+“fake email”
+“phishing link”
+“malicious attachment”

@@ -1,0 +1,54 @@
+--cd C:\Users\mishk\forensic-ai-search\backend
+--cd C:\Users\mishk\forensic-ai-search\frontend
+--npm start
+
+--backend:
+ 1. pip install flask flask-cors sentence-transformers scikit-learn
+ 2.create 3 files (python and text)
+
+ --run back and frontend 
+  1.Terminal 1: 
+    -cd C:\Users\mishk\forensic-ai-search\backend
+    -python app.py
+  2.Terminal 2: 
+    -cd C:\Users\mishk\forensic-ai-search\frontend
+    -npm start
+
+    Overview:
+    1. development environment
+    The system was developed using Visual Studio Code as the primary development environment. 
+    The frontend was built using React and executed via Node.js, while the backend was developed using Python Flask. 
+    The application was run locally using terminal commands and tested on localhost, demonstrating a fully functional development workflow.
+
+    2.Extent of own code
+    AI =Libraries (Flask, React, SentenceTransformers) 
+    Our logic = API design, integration, thresholds, UI, classification
+    Approximately 70–80% of the system was independently developed and integrated. 
+    External libraries such as SentenceTransformers, Flask, and React were used as supporting frameworks, while the core implementation 
+    including API integration, semantic search logic, risk classification thresholds, and frontend-backend communication 
+    was developed and adapted manually.
+
+    3.Overall contribution to digital forensics
+    Why our system matters in real investigation...
+    Contributes to DF by improving the efficiency of evidence discovery in large datasets such as logs, emails and communication records.
+    Traditional keyword search methods rely on exact matches, which may miss relevant evidence. The proposed AI system uses semantic 
+    similarity to detect contextually related forensic evidence, giving investigators a chance to identify suspicious activity such as 
+    credential leaks, unauthorized access, and data exfiltration more effectively and quickly.
+
+    4.How much AI contributes to our solution
+    The AI component is central to the system. It uses a Sentence Transformer model to convert forensic text into numerical embeddings 
+    and applies cosine similarity to identify semantically related entries. The AI enables contextual understanding of forensic data, 
+    allowing the system to detect related evidence even when exact keyword matches are not present.
+
+    5.Demonstrate understanding of AI capability
+    The AI capability implemented in this system is Natural Language Processing , specifically semantic embedding using Sentence Transformers. 
+    Text data is transformed into high-dimensional vector representations, where semantically similar phrases are positioned closer together 
+    in vector space. Cosine similarity is then used to measure the closeness between the user query and forensic records. This allows the 
+    system to interpret meaning rather than relying on exact keyword matching.
+
+    6.Data preprocessing / formatting
+    Entails:cleaning text,tokenization concept,vector conversion,filtering thresholds
+    Before applying AI processing, the dataset is preprocessed by removing unnecessary whitespace and standardising text format. Each forensic 
+    log entry is converted into a clean text string. The Sentence Transformer model then converts these text entries into numerical embeddings. 
+    During query processing, the input text is similarly encoded and compared using cosine similarity. A threshold is applied to filter out 
+    low-relevance results, ensuring only meaningful forensic matches are returned.

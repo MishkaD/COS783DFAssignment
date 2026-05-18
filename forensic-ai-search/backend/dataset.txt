@@ -1,0 +1,30 @@
+Unauthorized login detected from unknown IP address 45.77.21.10
+Multiple failed login attempts detected for admin account
+Brute force attack suspected on authentication system
+Employee shared confidential password via email outside organization
+Sensitive credentials found in plain text email communication
+Suspicious USB device connected to workstation without authorization
+Large data transfer detected to external USB storage device
+Database dump leaked through messaging application channel
+Potential data exfiltration detected via cloud upload service
+Unusual outbound network traffic detected during non-business hours
+Malware execution detected on endpoint after suspicious download
+Ransomware activity suspected encrypting multiple system files
+Phishing email clicked by user containing malicious attachment
+Suspicious login from foreign geographic location flagged by system
+Privilege escalation detected on user account with limited access
+Unauthorized access attempt to restricted financial records database
+Multiple account lockouts triggered due to repeated failed logins
+Internal system files accessed outside normal working hours
+Security policy violation: attempt to bypass firewall restrictions
+Suspicious PowerShell script execution detected on host machine
+Credential dumping activity detected in system memory logs
+Lateral movement detected between internal network devices
+Data integrity breach detected in customer records database
+External IP attempting to scan open ports on corporate server
+Malicious file downloaded from untrusted external source
+Hidden process detected attempting to modify system registry
+Anomalous user behavior detected inconsistent with baseline activity
+Suspicious encryption activity detected on multiple file directories
+Unauthorized API access attempt detected in application logs
+DNS tunneling activity suspected in outbound network traffic
