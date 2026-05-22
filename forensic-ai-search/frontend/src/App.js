@@ -75,7 +75,41 @@ function App() {
               borderLeft: `6px solid ${getColor(item.risk)}`
             }}
           >
-            <p><b>Evidence:</b> {item.text}</p>
+            <p><b>Evidence:</b> {" "}
+              {item.explanation.map((token, idx) => {
+                let colour = "transparent";
+                let text = "white";
+
+                if (token.importance >= 0.45)
+                {
+                  colour = "#ef4444";
+                }
+                else if (token.importance >= 0.30)
+                {
+                  colour = "#f59e0b";
+                }
+                else if  (token.importance > 0)
+                {
+                  colour = "#22c55e"
+                }
+
+                return (
+                  <span
+                    key={idx}
+                    style={{
+                      backgroundColor: colour,
+                      color: text,
+                      padding: "2px 5px",
+                      marginRight: "4px",
+                      borderRadius: "4px",
+                      fontWeight: token.importance > 0.2 ? "bold" : "normal"
+                    }}
+                  >
+                    {token.word}
+                  </span>
+                );
+              })}
+            </p>
 
             <p>
               <b>Similarity Score:</b> {(item.score * 100).toFixed(2)}%
